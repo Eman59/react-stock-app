@@ -1,0 +1,23 @@
+.filter-container {
+  padding: 0 15px 15px 15px;
+
+  .filter-wrapper {
+    .filter-label-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      label {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+    }
+
+    h3 {
+      background-color: #d9d9d956;
+      padding: 10px;
+      border-radius: 4px;
+    }
+  }
+}
