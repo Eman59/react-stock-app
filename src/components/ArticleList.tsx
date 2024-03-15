@@ -105,11 +105,11 @@ const ArticleList: React.FC = () => {
       <div>
         <Articles currentArticles={currentArticles} />
 
-        <Pagination
+        {currentArticles.length > 0 && <Pagination
           currentPage={currentPage}
           totalPages={Math.ceil(filteredArticles.length / articlesPerPage)}
           paginate={paginate}
-        />
+        />}
       </div>
     </div>
   );

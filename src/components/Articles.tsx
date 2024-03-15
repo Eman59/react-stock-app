@@ -25,7 +25,9 @@ const Articles: React.FC<ArticlesProps> = ({ currentArticles }) => {
   return (
     <div className="articles-container">
       {currentArticles.length === 0 ? (
-        <div>No result found for selection.</div>
+        <div className="no-results">
+          <h2>No result found for selection.</h2>
+        </div>
       ) : (
         currentArticles.map((article, index) => (
           <div key={index} className="articles-wrapper">
